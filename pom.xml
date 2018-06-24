@@ -25,6 +25,18 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <distributionManagement>
+      <snapshotRepository>
+          <id>snapshots</id>
+          <name>my-snapshots</name>
+          <url>http://localhost:8081/artifactory/libs-snapshot</url>
+      </snapshotRepository>
+      <repository>
+          <id>central</id>
+          <name>my-release</name>
+          <url>http://localhost:8081/artifactory/libs-release</url>
+      </repository>
+  </distributionManagement>
   </dependencies>
 
   <build>
