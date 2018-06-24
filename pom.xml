@@ -6,7 +6,7 @@
 
   <groupId>com.codemines</groupId>
   <artifactId>samplemaven</artifactId>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.3-SNAPSHOT</version>
 
   <name>samplemaven</name>
   <!-- FIXME change it to the project's website -->
