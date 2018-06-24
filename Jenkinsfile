@@ -6,10 +6,11 @@ node {
    }
    stage('build java') {
       // Run the maven build
+      echo "${mvnHome}"
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
       } else {
-         bat(/"${mvnHome}\bin\mvn" clean install/)
+         bat(/"${mvnHome}\bin\mvn" clean deploy/)
       }
    }
 }
